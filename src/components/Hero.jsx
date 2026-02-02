@@ -147,7 +147,7 @@ function Hero() {
                     className="flex flex-wrap items-center justify-center gap-4 mb-12"
                 >
                     <motion.a
-                        href="/resume.pdf"
+                        href="kartik bansal.pdf"
                         download
                         className="btn-primary inline-flex items-center gap-2"
                         whileHover={{ scale: 1.05 }}
