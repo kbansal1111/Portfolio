@@ -81,41 +81,17 @@ function Experience() {
                     </p>
                 </motion.div>
 
-                {/* Timeline */}
-                <div className="max-w-3xl mx-auto relative">
-                    {/* Animated timeline line */}
-                    <motion.div
-                        variants={lineVariants}
-                        className="absolute left-0 md:left-1/2 top-0 bottom-0 w-px 
-                     bg-gradient-to-b from-primary-500 via-primary-500/50 to-transparent
-                     origin-top hidden md:block"
-                    />
-
-                    {/* Experience Cards */}
+                {/* Experience Cards */}
+                <div className="max-w-4xl mx-auto relative px-4">
                     {experiences.map((exp, index) => (
                         <motion.div
                             key={exp.id}
                             variants={itemVariants}
-                            className={`relative mb-12 md:w-1/2 ${index % 2 === 0 ? 'md:pr-12 md:ml-auto' : 'md:pl-12'
-                                }`}
+                            className="mb-12"
                         >
-                            {/* Timeline dot */}
-                            <motion.div
-                                initial={{ scale: 0 }}
-                                animate={isInView ? { scale: 1 } : { scale: 0 }}
-                                transition={{ delay: 0.5, duration: 0.3 }}
-                                className="hidden md:block absolute top-8 w-4 h-4 rounded-full 
-                         bg-primary-500 border-4 border-dark-900 shadow-lg shadow-primary-500/30
-                         left-0 md:left-auto md:-translate-x-1/2"
-                                style={{
-                                    [index % 2 === 0 ? 'left' : 'right']: '-8px',
-                                }}
-                            />
-
-                            {/* Card */}
                             <motion.div
                                 whileHover={{ scale: 1.02 }}
-                                className="glass-card p-6 relative"
+                                className="glass-card p-6 relative max-w-2xl mx-auto"
                             >
                                 {/* Current badge */}
                                 {exp.current && (
