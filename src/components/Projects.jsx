@@ -48,7 +48,7 @@ const projects = [
         tech: ['React.js', 'JavaScript', 'HTML/CSS'],
         image: null, // Add image path later
         github: '#',
-        live: '#',
+        live: 'https://linkedlist-visualizer.netlify.app/',
         featured: true,
         icon: HiCode,
     },
